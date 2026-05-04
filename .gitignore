@@ -1,0 +1,36 @@
+# Перейдите в папку с проектом
+cd путь_к_папке_training_planner
+
+# Инициализируйте репозиторий
+git init
+
+# Создайте файл .gitignore (см. содержимое ниже)
+echo "# Игнорируем файл данных" > .gitignore
+echo "training_data.json" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+
+# Добавьте все файлы
+git add .
+
+# Сделайте коммит
+git commit -m "Initial commit: Training Planner app"
+
+# Привяжите удалённый репозиторий (например, на GitHub)
+git remote add origin https://github.com/ваш_username/training-planner.git
+
+# Отправьте на GitHub
+git branch -M main
+git push -u origin main
+# Данные приложения (чтобы не загружать пользовательские тренировки)
+training_data.json
+
+# Системные файлы Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Редакторы
+.vscode/
+.idea/
+*.swp
